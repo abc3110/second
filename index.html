@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{margin:0px;padding:0px;border:0px;}
+			body{
+				background:#f5f5f5;
+				font: 12px "simhei", Arial, Helvetica, sans-serif;
+			}
+			#footer{
+				background:#fff;
+			}
+			#footer>.mainbody{
+				height:400px;
+			}
+			.mainbody{
+				width:1000px;
+				margin:0 auto;
+			}
+			#top div{
+/*				border:1px solid #000;*/
+			}
+			.logo{
+				height:60px;
+				padding-top:53px;
+			}
+			.nav{
+				height:64px;line-height:60px;
+			}
+			.carousel{
+				height:400px;
+			}
+			.unknow{
+				height:260px;
+			}
+			.logo>.logo-pic{
+				float:left;
+			}
+			#top div.logo>.search{
+				margin-left:30px;
+				margin-top:2px;
+				float:left;
+				position:relative;
+				border:0px;
+			}
+			.logo>.search>input{
+				width:400px;height:34px;
+				padding-left:10px;
+				background-color:#f5f5f5;
+				border:1px solid #0AA1ED;
+				outline:none;
+			}
+			.logo>.search>a{
+				position:absolute;
+				top:1px;
+				right:0;
+			}
+			.logo>.icon-btn{
+				margin-top:11px;
+				font-size:12px;
+				float:right;
+			}
+			.logo>.icon-btn img{
+				vertical-align:middle;
+			}
+			.logo>.icon-btn a{
+				margin-left:10px;margin-right:10px;
+				text-decoration:none;
+			}
+			.logo>.icon-btn a:hover{
+				color:#33f;
+			}
+			.nav>ul{
+				list-style:none;
+				display:flex;
+				justify-content:flex-start;
+			}
+			.nav>ul>li{
+				margin-right:44px;
+			}
+			.nav a{
+				font-size:16px;
+				text-decoration:none;
+				color:#cccccc;
+			}
+			.carousel{
+				position:relative;
+				overflow:hidden;
+				border:1px solid #ddd;
+			}
+			.carousel>ul{
+				list-style:none;
+			}
+			.carousel>ul>li{
+				float:left;
+			}
+			.carousel .ck-side{
+				width:30px;height:70px;
+				border-radius:3px;
+				position:absolute;
+				top:165px;
+				opacity:0.1;
+			}
+			.carousel .ck-left{
+				background:rgb(0,0,0) url(img/arrow-left.png) no-repeat center center;
+				left:5px;
+			}
+			.carousel .ck-right{
+				background:rgb(0,0,0) url(img/arrow-right.png) no-repeat center center;
+				right:5px;
+			}
+			.carousel .ck-side:hover{
+				opacity:0.3;
+			}
+			.carousel>ul.indicator{
+				position:absolute;
+				bottom:10px;
+				left:468px;
+			}
+			.carousel>ul.indicator a{
+				width:12px;height:12px;
+				background-color:#fff;
+				display:block;
+				border-radius:50%;
+				margin:0px 3px;
+			}
+			.carousel>ul.indicator a.active{
+				background-color:#0aa1ed;
+			}
+			.floor::before{
+				content:"";
+				display: table;
+			}
+			.floor>.topfloor{
+				background:url(img/computer_icon.png) no-repeat 0px 15px;
+				border-bottom:2px solid #666666;
+				margin-bottom:20px;margin-top:20px;
+				padding-left:50px;
+				font-size:24px;
+				font-weight:bold;
+				color:#666666;
+				height:40px;line-height:40px;
+			}
+			.floor>.product{
+				height:650px;
+				border:1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="top">
+			<div class="mainbody">
+				<div class="logo">
+					<div class="logo-pic">
+						<a href="#"><img src="img/logo.png"></a>
+					</div>
+					<div class="search">
+						<input type="text" placeholder="请输入您要搜索的内容">
+						<a href="#"><img src="img/search.png" alt=""></a>
+					</div>
+					<div class="icon-btn">
+						<a href="#"><img src="img/care.png"></a>|<a href="#"><img src="img/order.png"></a>|
+						<a href="#"><img src="img/shop_car.png"></a>|<a href="#">注册</a>|<a href="#">登录</a>
+					</div>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">学习用品</a></li>
+						<li><a href="#">私人订制</a></li>
+					</ul>
+				</div>
+				<div class="carousel">
+					<ul>
+						<li><a href="#"><img src="img/banner1.png" alt=""></a></li>
+						<li><a href="#"><img src="img/banner2.png" alt=""></a></li>
+						<li><a href="#"><img src="img/banner3.png" alt=""></a></li>
+						<li><a href="#"><img src="img/banner4.png" alt=""></a></li>
+					</ul>	
+					<a href="#" class="ck-left ck-side"></a>
+					<a href="#" class="ck-right ck-side"></a>
+					<ul class="indicator">
+						<li><a href="#"></a></li>
+						<li><a href="#"></a></li>
+						<li><a href="#"  class="active"></a></li>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				<div class="floor one">
+					<div class="topfloor">首页推荐&nbsp;/1F</div>
+					<div class="product"></div>
+				</div>
+				<div class="floor two">
+					<div class="topfloor">最新上架&nbsp;/2F</div>
+					<div class="product"></div>
+				</div>
+				<div class="floor three">
+					<div class="topfloor">热销单品&nbsp;/3F</div>
+					<div class="product"></div>
+				</div>
+				<div class="unknow"></div>
+			</div>
+		</div>
+		<div id="footer">
+			<div class="mainbody">
+				<div>
+					<img src="img/logo.png" alt="">
+					<img src="img/footerFont.png" alt="">
+				</div>
+				<ul>
+					<li>卖家帮助
+						<ul>
+							<li>新手指南</li>
+							<li>服务保障</li>
+							<li>常见问题</li>
+						</ul>
+					</li>
+					<li>商家帮助
+						<ul>
+							<li>商家入驻</li>
+							<li>商家后台</li>
+						</ul>
+					</li>
+					<li>关于我们
+						<ul>
+							<li>关于达内</li>
+							<li>联系我们</li>
+							<li><img src="img/wechat.png" alt=""><img src="img/sinablog.png" alt=""></li>
+						</ul>
+					</li>
+				</ul>
+				<div>
+					<p>学子商城客户端</p>
+					<img src="img/ios.png" alt="">
+					<img src="img/android.png" alt="">
+					<div>
+						<img src="img/erweima.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
